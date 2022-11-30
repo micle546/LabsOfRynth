@@ -305,11 +305,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 736046288, guid: f5fddff68e3084b41bce1087aba27f17, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 894531996, guid: f5fddff68e3084b41bce1087aba27f17, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 994330228, guid: f5fddff68e3084b41bce1087aba27f17, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 108492405207906438, guid: f5fddff68e3084b41bce1087aba27f17,
         type: 3}
@@ -420,6 +424,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Menu Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982405549213071322, guid: f5fddff68e3084b41bce1087aba27f17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982405550757025718, guid: f5fddff68e3084b41bce1087aba27f17,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5fddff68e3084b41bce1087aba27f17, type: 3}

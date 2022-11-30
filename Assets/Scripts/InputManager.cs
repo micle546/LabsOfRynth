@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
 
     private PlayerMotor motor;
     private PlayerLook look;
+    private PlayerUI ui;
     // Start is called before the first frame update
     void Awake()
     {
@@ -20,10 +21,12 @@ public class InputManager : MonoBehaviour
 
         motor = GetComponent<PlayerMotor>();
         look = GetComponent<PlayerLook>();
+        ui = GetComponent<PlayerUI>();
 
         onFoot.Jump.performed += ctx => motor.Jump();
         onFoot.Crouch.performed += ctx => motor.Crouch();
         onFoot.Sprint.performed += ctx => motor.Sprint();
+        onFoot.Menu.performed += ctx => ui.togglePause();
 
     }
     private void FixedUpdate()

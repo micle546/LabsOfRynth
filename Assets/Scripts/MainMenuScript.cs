@@ -40,7 +40,7 @@ public class MainMenuScript : MonoBehaviour
         {
             float progress = Mathf.Clamp01(op.progress / .9f);
             loadingbar.value = progress;
-            loadingText.text = "Loading " + progress*100 + "%";
+            loadingText.text = "Loading " + Mathf.Round(progress * 100) + "%";
 
             yield return null;
         }
