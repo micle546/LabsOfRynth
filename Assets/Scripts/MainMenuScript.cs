@@ -11,6 +11,7 @@ public class MainMenuScript : MonoBehaviour
     public GameObject mainMenu;
     public GameObject loadingScreen;
     public GameObject optionsMenu;
+    public GameObject levelMenu;
     public Slider loadingbar;
     public TextMeshProUGUI loadingText;
 
@@ -20,6 +21,7 @@ public class MainMenuScript : MonoBehaviour
         mainMenu.SetActive(true);
         loadingScreen.SetActive(false);
         optionsMenu.SetActive(false);
+        levelMenu.SetActive(false);
     }
     public void PlayGame()
     {
@@ -28,6 +30,7 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("Loading Scene: " + SceneManager.GetSceneByBuildIndex(nextSceneIndex).name);
 
         mainMenu.SetActive(false);
+        levelMenu.SetActive(false);
         loadingScreen.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -56,9 +59,34 @@ public class MainMenuScript : MonoBehaviour
         optionsMenu.SetActive(true);
     }
 
+    public void LevelMenu()
+    {
+        mainMenu.SetActive(false);
+        levelMenu.SetActive(true);
+    }
+    public void ReturnToMainMenu()
+    {
+        mainMenu.SetActive(true);
+        optionsMenu.SetActive(false);
+        levelMenu.SetActive(false);
+    }
+
+
     public void Exit()
     {
         Application.Quit();
         Debug.Log("Player quit game");
+    }
+
+    public void LoadLevel(int levelIndex)
+    {
+        Debug.Log("Loading Scene: " + SceneManager.GetSceneByBuildIndex(levelIndex).name);
+
+        mainMenu.SetActive(false);
+        levelMenu.SetActive(false);
+        loadingScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        StartCoroutine(LoadAsync(levelIndex));
     }
 }

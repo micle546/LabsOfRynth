@@ -10,6 +10,7 @@ public class DamagePickup : Interactable
     [SerializeField]
     //private GameObject door;
     private PlayerUI playerUI;
+    public bool isReuseable = false;
 
 
     public void Start()
@@ -19,5 +20,7 @@ public class DamagePickup : Interactable
     protected override void Interact()
     {
         playerUI.TakeDamage(damageAmount);
+        if (!isReuseable)
+            this.gameObject.SetActive(false);
     }
 }
