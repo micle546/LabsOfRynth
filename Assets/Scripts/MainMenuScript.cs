@@ -16,6 +16,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
         mainMenu.SetActive(true);
         loadingScreen.SetActive(false);
         optionsMenu.SetActive(false);
@@ -28,7 +29,8 @@ public class MainMenuScript : MonoBehaviour
 
         mainMenu.SetActive(false);
         loadingScreen.SetActive(true);
-
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         StartCoroutine(LoadAsync(nextSceneIndex));
     }
 
