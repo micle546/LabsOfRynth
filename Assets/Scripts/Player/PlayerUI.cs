@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PlayerUI : MonoBehaviour
 {
+    public static PlayerUI instance { get; private set; }
+
     [SerializeField]
     private TextMeshProUGUI promptText;
     [SerializeField]
@@ -22,16 +24,21 @@ public class PlayerUI : MonoBehaviour
 
     public Image frontHealthBar;
     public Image backHealthBar;
+
+    private bool collideLava = false;
     
 
     public void Start()
     {
         currentHealth = maxHealth;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         Time.timeScale = 1f;
         UpdateHealthUI();
     }
@@ -49,13 +56,25 @@ public class PlayerUI : MonoBehaviour
     }
     public void togglePause()
     {
-        isPaused = !isPaused;
+        setPaused(!isPaused);
+    }
+
+    public void setPaused(bool value)
+    {
+        isPaused = value;
         pauseMenu.SetActive(isPaused);
         if (isPaused)
+        {
             Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
         else
+        {
             Time.timeScale = 1f;
-        //TODO add pause functionality
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
     }
     public void ExitGame()
     {
@@ -67,7 +86,7 @@ public class PlayerUI : MonoBehaviour
     }
     private void UpdateHealthUI()
     {
-        Debug.Log(currentHealth);
+        //Debug.Log(currentHealth);
         float fillF = frontHealthBar.fillAmount;
         float fillB = backHealthBar.fillAmount;
         float hFraction = currentHealth / maxHealth;
@@ -104,4 +123,13 @@ public class PlayerUI : MonoBehaviour
         lerpTimer = 0f;
         //TODO: trigger audio effect?
     }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (!focus)
+            setPaused(true);
+
+
+    }
+
 }

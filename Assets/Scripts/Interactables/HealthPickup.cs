@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class HealthPickup : Interactable
 {
-
+    //PlayerUI playerUI;
     public float restoreAmount = 10f;
-
-    [SerializeField]
-    //private GameObject door;
-    private PlayerUI playerUI;
-
+    public bool isReuseable = false;
 
     public void Start()
     {
-        playerUI = GameObject.FindWithTag("Player").GetComponent<PlayerUI>();
+        //playerUI = GetComponent
     }
+
+
     protected override void Interact()
     {
-        playerUI.RestoreHealth(restoreAmount);
+        PlayerUI.instance.RestoreHealth(restoreAmount);
+        if (!isReuseable)
+            this.gameObject.SetActive(false);
     }
 }
