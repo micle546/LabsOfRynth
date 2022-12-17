@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7548627193662817036}
   - component: {fileID: 7548627193662817037}
   - component: {fileID: 7548627193662817042}
+  - component: {fileID: 6545935895846320377}
   m_Layer: 10
   m_Name: SpeedBoostCube
   m_TagString: Untagged
@@ -93,6 +94,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6545935895846320377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7548627193662817043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 990a07ff34178fe47a4495515bd3f83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMesssage: Speed Boost (10s)
+  amount: 10
+  time: 10
+  isReuseable: 1
 --- !u!1 &8924310557910038781
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8924310557910038781}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.94, y: 0.91, z: 12.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
