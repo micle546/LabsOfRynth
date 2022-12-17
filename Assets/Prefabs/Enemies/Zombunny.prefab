@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6958834514480962945}
   - component: {fileID: 6958834514483907817}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Zombunny
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6958834514480726433}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5000001, y: 0.5000001, z: 0.5}
   m_Children: []
   m_Father: {fileID: 6958834514480962947}
   m_RootOrder: 0
@@ -98,9 +98,10 @@ GameObject:
   - component: {fileID: 6958834514480826191}
   - component: {fileID: 6958834514480826189}
   - component: {fileID: 6958834514480826188}
-  m_Layer: 9
+  - component: {fileID: 7190595092134191198}
+  m_Layer: 12
   m_Name: Zombunny
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -301,6 +302,18 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7190595092134191198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958834514480726435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ee2d23aadf1819498b2265f853ab6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7458114986341025799
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +325,7 @@ GameObject:
   - component: {fileID: 7458114986340537383}
   - component: {fileID: 7458114986358886755}
   - component: {fileID: 7458114986358991043}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: HitParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,9 +339,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7458114986341025799}
-  m_LocalRotation: {x: -0.1736482, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.1736482, y: -0, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 6958834514480962947}
   m_RootOrder: 1
@@ -5069,7 +5082,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 01ffe1f3679a0894087ea5e74106fb93, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
