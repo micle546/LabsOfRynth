@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LevelFinish : MonoBehaviour
+
+public class LevelFinish : Interactable
 {
     public GameObject loadingScreen;
     public Slider loadingbar;
@@ -17,7 +18,7 @@ public class LevelFinish : MonoBehaviour
 
     }
 
-    public void NextLevel()
+    protected override void Interact()
     {
         PlayerUI.instance.setPaused(true);
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;

@@ -231,7 +231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &580008901
 GameObject:
@@ -317,7 +317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &660582890
 PrefabInstance:
@@ -329,7 +329,7 @@ PrefabInstance:
     - target: {fileID: 4980143765285072249, guid: 9e7a910ee9a679b4bb430caf72f2136f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4980143765285072249, guid: 9e7a910ee9a679b4bb430caf72f2136f,
         type: 3}
@@ -55475,7 +55475,7 @@ PrefabInstance:
     - target: {fileID: 8405532271680152463, guid: d9db5de4bc036484f98b14e487f694bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8405532271680152463, guid: d9db5de4bc036484f98b14e487f694bc,
         type: 3}
@@ -55591,6 +55591,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7548627194045252420, guid: 3995524668bfac24ba84922780b603d4,
+        type: 3}
+      propertyPath: loadingbar
+      value: 
+      objectReference: {fileID: 5800002318393736099}
+    - target: {fileID: 7548627194045252420, guid: 3995524668bfac24ba84922780b603d4,
+        type: 3}
+      propertyPath: loadingText
+      value: 
+      objectReference: {fileID: 5800002317837179351}
+    - target: {fileID: 7548627194045252420, guid: 3995524668bfac24ba84922780b603d4,
+        type: 3}
+      propertyPath: loadingScreen
+      value: 
+      objectReference: {fileID: 5800002316835609750}
     - target: {fileID: 7940346271575884243, guid: 3995524668bfac24ba84922780b603d4,
         type: 3}
       propertyPath: m_Name
@@ -55608,7 +55623,7 @@ PrefabInstance:
     - target: {fileID: 7215378116255893219, guid: 78f4f101d2d8a7d488bab8dea10f159b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7215378116255893219, guid: 78f4f101d2d8a7d488bab8dea10f159b,
         type: 3}
@@ -55841,7 +55856,7 @@ PrefabInstance:
     - target: {fileID: 8574792406008593706, guid: 1026311fbe9d1954790ea5d813ebdedc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8574792406008593706, guid: 1026311fbe9d1954790ea5d813ebdedc,
         type: 3}
@@ -55979,6 +55994,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5800002316835609750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1473822291129050342, guid: 1026311fbe9d1954790ea5d813ebdedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3435123945699924518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5800002317837179351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1473822292130783655, guid: 1026311fbe9d1954790ea5d813ebdedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3435123945699924518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5800002318393736099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1473822291718407123, guid: 1026311fbe9d1954790ea5d813ebdedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3435123945699924518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7107355700101012244 stripped
