@@ -2,10 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerMotor : MonoBehaviour
 {
+    public static PlayerMotor instance { get; private set; }
+
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool isGrounded;
@@ -14,6 +17,8 @@ public class PlayerMotor : MonoBehaviour
     private bool lerpCrouch = false;
 
     public float baseSpeed = 5f;
+    public float speedUpgrade = 0f;
+    public float speedBoost = 0f;
     public float sprintSpeedMod = 2f;
     public float crouchSpeedMod = -3f;
     public float speed = 5f;
@@ -28,6 +33,11 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     // Update is called once per frame
@@ -50,7 +60,11 @@ public class PlayerMotor : MonoBehaviour
             }
         }
 
-        speed = baseSpeed + Convert.ToSingle(sprinting) * sprintSpeedMod + Convert.ToSingle(crouching) * crouchSpeedMod;
+        speed = (baseSpeed + Convert.ToSingle(sprinting) 
+            * sprintSpeedMod + Convert.ToSingle(crouching)
+            * crouchSpeedMod
+            + speedBoost
+            + speedUpgrade);
 
     }
 

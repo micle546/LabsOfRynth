@@ -200,6 +200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 5
+  speedUpgrade: 0
+  speedBoost: 0
   sprintSpeedMod: 2
   crouchSpeedMod: -3
   speed: 5
@@ -262,3 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   promptText: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  healthText: {fileID: 0}
+  maxHealth: 100
+  chipSpeed: 2
+  frontHealthBar: {fileID: 0}
+  backHealthBar: {fileID: 0}
