@@ -141,6 +141,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   promptMesssage: Open Door R
   door: {fileID: 1719379823}
+--- !u!1 &264502068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3617720525238090089, guid: d9db5de4bc036484f98b14e487f694bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1127844033025306905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &264502077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264502068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b880fa0ead394604ab54670a26f1f9e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
+  collideLava: 0
+  damageTime: 0.5
+  currentDamageTime: 0
 --- !u!1 &451004376
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +416,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1127844033025306905}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 264502068}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfa0481f319a0ef4f8eca384348fd045, type: 3}
@@ -55341,36 +55363,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &1868349039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3912744937336811296, guid: 8f67690fa79bad841960667214c94aee,
-    type: 3}
-  m_PrefabInstance: {fileID: 1681576033}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1868349040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868349039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf18f29a0d3f94541803a8d494167826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1868349041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868349039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf18f29a0d3f94541803a8d494167826, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2020422805
 PrefabInstance:
   m_ObjectHideFlags: 0
