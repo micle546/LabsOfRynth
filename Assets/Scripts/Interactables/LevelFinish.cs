@@ -25,8 +25,8 @@ public class LevelFinish : Interactable
 
         Debug.Log("Loading Scene: " + SceneManager.GetSceneByBuildIndex(nextSceneIndex).name);
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         StartCoroutine(LoadAsync(nextSceneIndex));
     }
     IEnumerator LoadAsync(int sceneIndex)

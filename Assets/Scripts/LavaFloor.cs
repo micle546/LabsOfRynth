@@ -11,29 +11,9 @@ public class LavaFloor : MonoBehaviour
     [SerializeField]
     private float currentDamageTime;
 
-    //void OnCollisionEnter(Collision other)
-    //{
-    //    if (other.gameObject.layer == 11)
-    //    //if (other.gameObject.tag == "Player")
-    //    {
-    //        collideLava = true;
-    //        Debug.Log("lava enter");
-    //    }
-
-    //}
-
-    //void OnCollisionExit(Collision other)
-    //{
-    //    if (other.gameObject.layer == 11)
-    //    {
-    //        collideLava = false;
-    //        Debug.Log("lave exit");
-    //    }
-
-    //}
-
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        //if (hit.gameObject.tag == "test")
         if (hit.gameObject.layer == 11)
         {
             currentDamageTime += Time.deltaTime;
