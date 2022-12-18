@@ -8,7 +8,6 @@ public class EnemyMovement : MonoBehaviour
     private Transform player;
     private NavMeshAgent nav;
     //Camera playerCam;
-    private Renderer renderer;
 
     
     private bool spotPlayer;
@@ -17,7 +16,6 @@ public class EnemyMovement : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         nav = GetComponent<NavMeshAgent>();
-        renderer = GetComponent<Renderer>();
         //playerCam = GetComponent<Camera>();
         spotPlayer = false;
     }
