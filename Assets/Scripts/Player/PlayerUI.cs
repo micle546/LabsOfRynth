@@ -24,8 +24,6 @@ public class PlayerUI : MonoBehaviour
 
     public Image frontHealthBar;
     public Image backHealthBar;
-
-    private bool collideLava = false;
     
 
     public void Start()
