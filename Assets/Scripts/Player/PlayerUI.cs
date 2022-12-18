@@ -49,7 +49,7 @@ public class PlayerUI : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = true;
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
     }
 

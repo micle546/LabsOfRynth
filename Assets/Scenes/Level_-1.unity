@@ -160,7 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
-  collideLava: 0
   damageTime: 0.5
   currentDamageTime: 0
 --- !u!1 &451004376
@@ -441,7 +440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
-  collideLava: 0
   damageTime: 1
   currentDamageTime: 0
 --- !u!1 &1236899547 stripped
@@ -55825,6 +55823,86 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1473822290962127630, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291123041740, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291123041740, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291123041740, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050342, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291129050343, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822291220689322, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822292130783654, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822292130783654, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473822292130783654, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81
+      objectReference: {fileID: 0}
     - target: {fileID: 7164514292169262289, guid: 1026311fbe9d1954790ea5d813ebdedc,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -55835,6 +55913,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 665204558}
+    - target: {fileID: 7164514293438842258, guid: 1026311fbe9d1954790ea5d813ebdedc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8574792406008593706, guid: 1026311fbe9d1954790ea5d813ebdedc,
         type: 3}
       propertyPath: m_Pivot.x

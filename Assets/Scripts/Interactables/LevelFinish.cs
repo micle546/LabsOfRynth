@@ -21,6 +21,7 @@ public class LevelFinish : Interactable
     protected override void Interact()
     {
         PlayerUI.instance.setPaused(true);
+        loadingScreen.SetActive(true);
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
         Debug.Log("Loading Scene: " + SceneManager.GetSceneByBuildIndex(nextSceneIndex).name);
