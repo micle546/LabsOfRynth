@@ -13,7 +13,7 @@ public class LavaFloor : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        //if (hit.gameObject.tag == "test")
+
         if (hit.gameObject.layer == 11)
         {
             currentDamageTime += Time.deltaTime;
@@ -21,7 +21,7 @@ public class LavaFloor : MonoBehaviour
             {
                 PlayerUI.instance.TakeDamage(damageAmount);
                 currentDamageTime = 0.0f;
-                Debug.Log("lave hit");
+                Debug.Log("lava hit");
             }
         }
     }
